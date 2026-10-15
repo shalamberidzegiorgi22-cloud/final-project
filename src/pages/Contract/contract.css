@@ -1,0 +1,6 @@
+/* Contract Page Styling */
+input:focus, select:focus {
+  outline: none;
+  border-color: #d4af37 !important;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}

@@ -1,0 +1,139 @@
+/* Layered angular highlights evoke cut sapphire facets without a large image asset. */
+.home-luxury-shell {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  border: 1px solid rgba(219, 234, 254, 0.2);
+  border-radius: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(ellipse at 76% 20%, rgba(67, 174, 255, 0.35), transparent 34%),
+    radial-gradient(ellipse at 15% 88%, rgba(16, 91, 190, 0.42), transparent 42%),
+    linear-gradient(128deg, #06132c 0%, #07336c 34%, #0754a0 63%, #06142e 100%);
+}
+
+.home-luxury-shell::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    linear-gradient(145deg, transparent 0 17%, rgba(126, 210, 255, 0.12) 17.1% 17.3%, transparent 17.4% 42%, rgba(184, 234, 255, 0.08) 42.1% 42.3%, transparent 42.4%),
+    linear-gradient(34deg, transparent 0 28%, rgba(78, 166, 255, 0.16) 28.1% 28.3%, transparent 28.4% 64%, rgba(155, 220, 255, 0.1) 64.1% 64.3%, transparent 64.4%),
+    linear-gradient(112deg, transparent 0 49%, rgba(165, 222, 255, 0.1) 49.1% 49.3%, transparent 49.4%),
+    repeating-linear-gradient(152deg, transparent 0 118px, rgba(193, 231, 255, 0.045) 119px, transparent 121px);
+  content: '';
+  pointer-events: none;
+}
+
+.home-luxury-shell > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-glass-nav {
+  display: flex;
+  width: calc(100% - 32px);
+  margin-top: 16px;
+  border: 1px solid rgba(219, 240, 255, 0.48);
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(195, 228, 255, 0.2), rgba(12, 48, 91, 0.56) 42%, rgba(106, 183, 255, 0.18));
+  box-shadow: 0 12px 36px rgba(0, 9, 30, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  backdrop-filter: blur(30px) saturate(185%);
+  -webkit-backdrop-filter: blur(30px) saturate(185%);
+}
+
+@media (max-width: 640px) {
+  .home-glass-nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 16px;
+  }
+}
+
+.home-inspector-button {
+  border-color: rgba(230, 246, 255, 0.78);
+  background: linear-gradient(135deg, rgba(219, 239, 255, 0.24), rgba(99, 167, 226, 0.12));
+  color: #eff8ff;
+  box-shadow: 0 10px 28px rgba(0, 14, 40, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(24px) saturate(175%);
+  -webkit-backdrop-filter: blur(24px) saturate(175%);
+}
+
+.home-inspector-button:hover {
+  border-color: rgba(240, 249, 255, 0.98);
+  background: linear-gradient(135deg, rgba(219, 239, 255, 0.36), rgba(99, 167, 226, 0.2));
+}
+
+.home-sapphire-glow {
+  background: radial-gradient(ellipse, rgba(112, 206, 255, 0.56), rgba(36, 132, 231, 0.28) 45%, transparent 72%);
+  filter: blur(34px);
+  transform: scale(1.15);
+}
+
+.home-silver-frame {
+  border-color: rgba(239, 249, 255, 0.96);
+  background:
+    linear-gradient(145deg, rgba(246, 252, 255, 0.72), rgba(87, 157, 215, 0.36) 32%, rgba(231, 246, 255, 0.58) 68%, rgba(30, 87, 143, 0.54)),
+    rgba(176, 218, 250, 0.2);
+  box-shadow:
+    0 32px 90px rgba(0, 7, 24, 0.58),
+    0 0 34px rgba(120, 203, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96),
+    inset 0 -1px 0 rgba(177, 222, 255, 0.48);
+  backdrop-filter: blur(30px) saturate(190%);
+  -webkit-backdrop-filter: blur(30px) saturate(190%);
+}
+
+.home-luxury-shell h1 {
+  color: #fff;
+  text-shadow: 0 3px 28px rgba(0, 10, 34, 0.4);
+}
+
+.dark .home-luxury-shell {
+  background:
+    radial-gradient(ellipse at 78% 24%, rgba(67, 126, 184, 0.13), transparent 36%),
+    radial-gradient(ellipse at 14% 88%, rgba(33, 68, 111, 0.12), transparent 42%),
+    linear-gradient(128deg, #050608 0%, #090d13 48%, #06080b 100%);
+}
+
+.dark .home-luxury-shell::before {
+  background:
+    linear-gradient(145deg, transparent 0 17%, rgba(126, 180, 220, 0.045) 17.1% 17.3%, transparent 17.4% 42%, rgba(184, 214, 239, 0.035) 42.1% 42.3%, transparent 42.4%),
+    linear-gradient(34deg, transparent 0 28%, rgba(78, 140, 198, 0.055) 28.1% 28.3%, transparent 28.4% 64%, rgba(155, 195, 229, 0.04) 64.1% 64.3%, transparent 64.4%),
+    linear-gradient(112deg, transparent 0 49%, rgba(165, 205, 235, 0.04) 49.1% 49.3%, transparent 49.4%),
+    repeating-linear-gradient(152deg, transparent 0 118px, rgba(193, 221, 244, 0.018) 119px, transparent 121px);
+}
+
+.dark .home-glass-nav {
+  border-color: rgba(203, 225, 245, 0.3);
+  background: linear-gradient(135deg, rgba(95, 137, 180, 0.2), rgba(5, 9, 15, 0.78) 48%, rgba(73, 126, 178, 0.14));
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.dark .home-sapphire-glow {
+  background: radial-gradient(ellipse, rgba(95, 169, 224, 0.3), rgba(32, 82, 130, 0.16) 45%, transparent 72%);
+}
+
+.dark .home-silver-frame {
+  border-color: rgba(215, 233, 250, 0.76);
+  background:
+    linear-gradient(145deg, rgba(208, 229, 248, 0.34), rgba(43, 74, 105, 0.52) 32%, rgba(151, 187, 219, 0.3) 68%, rgba(8, 19, 32, 0.68)),
+    rgba(21, 42, 64, 0.36);
+  box-shadow:
+    0 32px 90px rgba(0, 0, 0, 0.62),
+    0 0 38px rgba(75, 145, 205, 0.16),
+    inset 0 1px 0 rgba(240, 248, 255, 0.62),
+    inset 0 -1px 0 rgba(120, 168, 208, 0.32);
+}
+
+/* Gold glow effect for premium buttons */
+.gold-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.45);
+}

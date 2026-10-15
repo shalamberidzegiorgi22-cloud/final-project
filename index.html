@@ -5,6 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>final-project</title>
+    <script>
+      (() => {
+        let savedTheme = null;
+        try {
+          savedTheme = localStorage.getItem('pruffo-theme');
+        } catch (error) {
+          console.error('Unable to read the saved theme preference.', error);
+        }
+
+        const prefersDark =
+          window.matchMedia &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = savedTheme === 'dark' || (savedTheme !== 'light' && prefersDark);
+
+        document.documentElement.classList.toggle('dark', isDark);
+        document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+
+        try {
+          const savedLanguage = localStorage.getItem('pruffo-language');
+          document.documentElement.lang =
+            savedLanguage === 'GE' ? 'ge' : savedLanguage === 'DE' ? 'de' : 'en';
+        } catch (error) {
+          console.error('Unable to read the saved language preference.', error);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
